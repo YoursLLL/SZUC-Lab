@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "fawa",
+  "version": "${version}",
+  "name": "Fawa",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/fawa/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "org.poition.fawa.client.FawaClient"
+    ],
+    "main": [
+      "org.poition.fawa.Fawa"
+    ]
+  },
+  "mixins": [
+    "fawa.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
